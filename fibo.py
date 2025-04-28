@@ -1,6 +1,6 @@
 #There is a problem
 def recursive_ntb_fibo(n):
-    if n <1:
+    if n ==0:
         return 0
     elif n == 1:
         return 1
@@ -12,7 +12,7 @@ def recursive_ntb_fibo(n):
 def main():
     n = int(input("Add number:"))
     print(recursive_ntb_fibo(n))
-    seq = [recursive_ntb_fibo(n) for num in range(n+1)]
+    seq = [recursive_ntb_fibo(num) for num in range(n+1)]
     print(seq)
 
 
